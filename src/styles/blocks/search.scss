@@ -1,0 +1,24 @@
+.search {
+  &__form {
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    padding: 8px;
+  }
+
+  &__input {
+    width: 216px;
+    padding-left: 40px;
+    border-radius: 12px;
+    background-color: $background-c;
+    height: 38px;
+    border: none;
+    outline: none;
+
+    &::placeholder {
+      color: $grey-c;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.table {
+  width: 100%;
+
+  &__column-name {
+    text-align: left;
+    color: $grey-c;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 14px;
+    border-bottom: 1px solid $l-grey-c;
+    min-width: max-content;
+  }
+
+  &__customer-info {
+    padding: 2% 0;
+    text-align: left;
+    color: $dark-c;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 1px solid $l-grey-c;
+
+    @include on-desktop {
+      padding: 24px 0;
+    }
+  }
+
+  &__link {
+    color: $dark-c;
+    transition: $transition-time;
+
+    &:hover {
+      color: $green-c;
+      transform: scale(101%);
+      display: block;
+    }
+  }
+
+  &__status {
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 8px;
+    text-align: center;
+
+    @include on-desktop {
+      padding: 4px 12px;
+    }
+
+    &--active {
+      color: $green-c;
+      border: 1px solid $green-c;
+      background: rgba(22, 192, 152, 0.38);
+    }
+
+    &--inactive {
+      color: $red-c;
+      border: 1px solid $red-c;
+      background: #ffc5c5;
+    }
+  }
+
+  &__none {
+    display: none;
+
+    @include on-desktop {
+      display: contents;
+    }
+  }
+
+  &__mob {
+    @include on-desktop {
+      display: none;
+    }
+  }
+}

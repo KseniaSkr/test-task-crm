@@ -1,0 +1,19 @@
+.open {
+  z-index: 2;
+  position: fixed;
+  width: 24px;
+  height: 24px;
+  left: -12px;
+  top: 44%;
+  transition: $transition-time;
+  border-radius: 50%;
+  background: $purple-c;
+
+  &:hover {
+    background-color: $pink-c;
+  }
+
+  @include on-desktop {
+    display: none;
+  }
+}
