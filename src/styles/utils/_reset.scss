@@ -1,17 +1,54 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: Poppins, sans-serif;
+  font-family: Poppins, Proxima nova, sans-serif;
 }
 
 h1,
 h2,
 h3,
 h4,
-p {
+p,
+span,
+div,
+ul,
+li,
+label,
+form,
+img,
+aside,
+article,
+header,
+nav,
+table,
+thead,
+tbody,
+th,
+tr {
   margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 a {
   text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header,
+aside,
+nav,
+article,
+section {
+  display: block;
 }

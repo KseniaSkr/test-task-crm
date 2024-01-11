@@ -3,22 +3,19 @@
     position: relative;
   }
 
-  &__icon {
-    position: absolute;
-    padding: 8px;
-  }
-
   &__input {
     width: 216px;
     padding-left: 40px;
     border-radius: 12px;
-    background-color: $background-c;
+    background-color: #f9fbff;
     height: 38px;
     border: none;
     outline: none;
-
+    background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="%237E7E7E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21L16.65 16.65" stroke="%237E7E7E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    background-repeat: no-repeat;
+    background-position: left 8px bottom 8px;
     &::placeholder {
-      color: $grey-c;
+      color: #b5b7c0;
     }
   }
 }

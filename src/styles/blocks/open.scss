@@ -3,14 +3,13 @@
   position: fixed;
   width: 24px;
   height: 24px;
-  left: -12px;
-  top: 44%;
-  transition: $transition-time;
+  top: 46%;
+  transition: all 0.6s;
   border-radius: 50%;
-  background: $purple-c;
+  background: #5932ea;
 
   &:hover {
-    background-color: $pink-c;
+    background-color: #e4c9fc;
   }
 
   @include on-desktop {

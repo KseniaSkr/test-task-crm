@@ -1,37 +1,71 @@
 .table {
   width: 100%;
 
-  &__column-name {
+  &__column_name {
     text-align: left;
-    color: $grey-c;
-    font-size: 14px;
+    color: #b5b7c0;
+    font-size: 12px;
     font-weight: 500;
-    padding-bottom: 14px;
-    border-bottom: 1px solid $l-grey-c;
-    min-width: max-content;
+    padding: 0 6px 14px 0;
+    border-bottom: 1px solid #eee;
+    min-width: fit-content;
+    @include on-tablet {
+      font-size: 14px;
+    }
   }
 
-  &__customer-info {
+  &__customer_info {
     padding: 2% 0;
     text-align: left;
-    color: $dark-c;
-    font-size: 14px;
+    color: #292d32;
+    font-size: 12px;
     font-weight: 500;
-    border-bottom: 1px solid $l-grey-c;
-
+    border-bottom: 1px solid #eee;
+    @include on-tablet {
+      font-size: 14px;
+    }
     @include on-desktop {
       padding: 24px 0;
     }
   }
 
   &__link {
-    color: $dark-c;
-    transition: $transition-time;
-
-    &:hover {
-      color: $green-c;
-      transform: scale(101%);
+    color: #292d32;
+    transition: all 0.6s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    @include on-tablet {
       display: block;
+    }
+    &--call {
+      &::before {
+        content: "\2706";
+        display: block;
+        position: absolute;
+        font-size: 24px;
+        left: 20%;
+        padding-bottom: 12%;
+        @include on-tablet {
+          display: none;
+        }
+      }
+    }
+    &--mail {
+      &::before {
+        content: "\2709";
+        display: block;
+        position: absolute;
+        font-size: 26px;
+        padding-bottom: 30%;
+        @include on-tablet {
+          display: none;
+        }
+      }
+    }
+    &:hover {
+      color: #16c098;
+      transform: scale(101%);
     }
   }
 
@@ -39,37 +73,58 @@
     font-size: 14px;
     font-weight: 500;
     border-radius: 4px;
-    padding: 8px;
+    height: 100%;
     text-align: center;
-
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include on-desktop {
       padding: 4px 12px;
     }
 
     &--active {
-      color: $green-c;
-      border: 1px solid $green-c;
+      color: #008767;
+      border: 1px solid #00b087;
       background: rgba(22, 192, 152, 0.38);
+      height: 24px;
+      &::before {
+        content: "\2713";
+        display: block;
+        position: absolute;
+        @include on-desktop {
+          display: none;
+        }
+      }
     }
 
     &--inactive {
-      color: $red-c;
-      border: 1px solid $red-c;
+      color: #df0404;
+      border: 1px solid #df0404;
       background: #ffc5c5;
+      height: 24px;
+      &::before {
+        content: "-";
+        display: block;
+        position: absolute;
+        @include on-desktop {
+          display: none;
+        }
+      }
     }
   }
 
   &__none {
     display: none;
-
     @include on-desktop {
       display: contents;
     }
   }
 
-  &__mob {
-    @include on-desktop {
-      display: none;
+  &__contact {
+    display: none;
+    @include on-tablet {
+      display: contents;
     }
   }
 }

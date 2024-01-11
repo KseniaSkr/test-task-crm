@@ -1,6 +1,11 @@
 .page {
   &__body {
+    padding: 36px 2%;
     margin: 0;
-    background-color: $background-c;
+    background-color: #fafbff;
+    line-height: 1;
+    @include on-desktop {
+      margin-left: 306px;
+    }
   }
 }
