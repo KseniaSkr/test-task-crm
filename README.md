@@ -1,2 +1,2 @@
-[DEMO LINK](https://KseniaSkr.github.io/KseniaSkr/)
+[DEMO LINK](https://KseniaSkr.github.io/test-task-crm/)
 
